@@ -6,3 +6,10 @@
    <%= submit_tag 'Sign in' %>
 
 <% end %>
+<p>Previous visitors:</p>
+<ul>
+<% @entries.each do |entry| %>
+  <li><%= entry.name %></li>
+<% end %>
+
+</ul>
