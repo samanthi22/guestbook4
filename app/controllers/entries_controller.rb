@@ -1,5 +1,6 @@
 class EntriesController < ApplicationController
     def sign_in
-end
+        @name = params[:visitor_name]
+    end
 
 end
